@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Run zonaprop-scraping",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/zonaprop-scraping.py",
+      "args": ["https://www.zonaprop.com.ar/terrenos-venta-capital-federal.html"],
+      "console": "integratedTerminal",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}",
+        "VIRTUAL_ENV": "${workspaceFolder}/.venv",
+        "PATH": "${workspaceFolder}/.venv/Scripts:${env:PATH}"
+      }
+    }
+  ]
+}
