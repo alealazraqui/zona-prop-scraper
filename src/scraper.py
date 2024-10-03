@@ -52,7 +52,7 @@ class Scraper:
         estates = []
         estates_scraped = 0
         estates_quantity = self.get_estates_quantity()
-        while 3 > estates_scraped:
+        while estates_quantity > estates_scraped:
             print(f"Page: {page_number}")
             estates += self.scrap_page(page_number)
             page_number += 1
